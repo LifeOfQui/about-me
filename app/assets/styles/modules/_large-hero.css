@@ -1,0 +1,56 @@
+.large-hero {
+    position: relative;
+    border-bottom: 10px solid $mainBlue;
+
+    @mixin atMedium {
+        top: 62px;
+    }
+
+    &__image {
+        display: block;
+    }
+
+    &__text-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3);
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,0.7) 66%, rgba(0,0,0,0.85) 100%);    
+    }
+
+    &__title {
+        font-weight: 300;
+        color: $mainOrange;
+        font-size: 2.4rem;
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 4.8rem;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        color: $mainBlue;
+        font-size: 1.5rem;
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 2.9rem;
+        }
+    }
+
+    &__description {
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        margin: 0.7rem auto 1rem;
+
+        @mixin atSmall {
+            font-size: 1.875rem;
+        }
+    }
+}

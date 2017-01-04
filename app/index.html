@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>Quirin Koch - About me</title>
+  <meta name="keywords" content="Quirin Koch, Programmer, Front End Developer, Sports enthusiast">
+  <meta name="description" content="A little about me and a playground for new front end development technologies.">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2f5572">
+
+  <!-- <link rel="icon" sizes="192x192" href="nice-highres.png"> -->
+
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
+
+</head>
+<body>
+  <header class="site-header">
+
+    <div class="wrapper">
+        <div class="site-header__logo">
+            <div class="site-header__logo__graphic icon icon--logo">About me</div>
+        </div>
+        <div class="site-header__menu-icon">
+            <div class="site-header__menu-icon__middle"></div>
+        </div>
+        <div class="site-header__menu-content">
+            <div class="site-header__btn-container">
+                <a href="#" class="btn open-modal">Contact me</a>
+            </div>
+            <nav class="primary-nav primary-nav--pull-right">
+              <ul>
+                <li><a href="#about-me" id="about-me-link">About me</a></li>
+                <li><a href="#my-skillset" id="my-skillset-link">My Skillset</a></li>
+                <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+                <li><a href="#hobbies" id="hobbies-link">Hobbies</a></li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+  </header>
+
+  <div class="large-hero">
+    <picture>
+        <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+        <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+        <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+        <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains" class="large-hero__image">
+    </picture>
+
+    <div class="large-hero__text-content">
+        <div class="wrapper">
+            <div class="block">
+                <div class="block-reveal">
+                    <div class="block-reveal__content">
+                        <h1 class="large-hero__title">Quirin Koch</h1>
+                    </div>
+                    <div class="block-reveal__element"></div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block-reveal">
+                    <div class="block-reveal__content">
+                        <p class="large-hero__description">Front end developer. Sports enthusiast.</p>
+                    </div>
+                    <div class="block-reveal__element block-reveal__element--offset1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <div id="about-me" class="page-section" data-matching-link="#about-me-link">
+        <div class="wrapper">
+            <h2 class="headline headline--centered"><strong>About Me</strong></h2>
+            <img class="lazyload" style="border-radius: 50%; width: 300px; float: left; margin: 0 1.5em 1.5em 0; shape-outside: circle();" data-srcset="assets/images/about-me--me.jpg 500w" alt="Picture of me, Quirin Koch">
+            <div class="generic-content-container">
+                    <h2 class="headline--small headline--light headline--blue headline--no-t-margin">I'm a Front End Developer from Ingolstadt, Germany.</h2>
+                    <p>When I'm not coding or pushing pixels, you'll find me doing some sort of sports or spending time with my girlfriend.</p>
+                    <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="my-skillset" class="page-section " data-matching-link="#my-skillset-link">
+          <h2 class="headline headline--centered"><strong>My Skillset</strong></h2>
+          <div class="wrapper wrapper--medium wrapper--b-margin">
+              <img class="lazyload" data-srcset="assets/images/my-skillset--graph.png 500w" alt="Skillset graph">
+          </div>
+      </div>
+
+  <div id="portfolio" class="page-section page-section--no-b-padding-until-large page-section--portfolio lazyload" data-matching-link="#portfolio-link">
+    <div class="wrapper wrapper--no-padding-until-large">
+        <h2 class="section-title section-title--blue"><span class="icon icon--comment section-title__icon"></span> My <strong>Portfolio</strong></h2>
+
+        <div class="row row--gutters row--gutters-small row--equal-height-at--large row--t-padding generic-content-container">
+            <div class="row__large-4">
+                <div class="portfolio">
+                    <div class="portfolio__photo">
+                        <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe">
+                    </div>
+                    <h3 class="portfolio__title">Jane Doe</h3>
+                    <h4 class="portfolio__subtitle">Neighbor</h4>
+                    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
+                </div>
+            </div>
+            <div class="row__large-4">
+                <div class="portfolio">
+                    <div class="portfolio__photo">
+                        <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="John Smith">
+                    </div>
+                    <h3 class="portfolio__title">John Smith</h3>
+                    <h4 class="portfolio__subtitle">Customer</h4>
+                    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
+                </div>
+            </div>
+            <div class="row__large-4">
+                <div class="portfolio portfolio--last">
+                    <div class="portfolio__photo">
+                        <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w" alt="Cat McKitty">
+                    </div>
+                    <h3 class="portfolio__title">Cat McKitty</h3>
+                    <h4 class="portfolio__subtitle">Pet</h4>
+                    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="hobbies" class="page-section page-section--blue" data-matching-link="#hobbies-link">
+      <div class="wrapper">
+        <h2 class="section-title"><span class="icon icon--star section-title__icon"></span> My <strong>Hobbies</strong></h2>
+
+        <div class="row row--gutters-large generic-content-container">
+            <div class="row__medium-6">
+                <div class="hobbies-item">
+                    <span class="icon icon--rain hobbies-item__icon"></span>
+                    <h3 class="hobbies-item__title">Obstacle course racing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptate, fugiat? Aperiam ad laborum tenetur alias quidem natus, dolore asperiores impedit est facilis nesciunt omnis exercitationem voluptate cumque ipsa consequuntur!</p>
+                </div>
+                <div class="hobbies-item">
+                    <span class="icon icon--globe hobbies-item__icon"></span>
+                    <h3 class="hobbies-item__title">Watching TV shows</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptate, fugiat? Aperiam ad laborum tenetur alias quidem natus, dolore asperiores impedit est facilis nesciunt omnis exercitationem voluptate cumque ipsa consequuntur!</p>
+                </div>
+            </div>
+            <div class="row__medium-6">
+                <div class="hobbies-item">
+                    <span class="icon icon--wifi hobbies-item__icon"></span>
+                    <h3 class="hobbies-item__title">Meeting with friends</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptate, fugiat? Aperiam ad laborum tenetur alias quidem natus, dolore asperiores impedit est facilis nesciunt omnis exercitationem voluptate cumque ipsa consequuntur!</p>
+                </div>
+                <div class="hobbies-item">
+                    <span class="icon icon--fire hobbies-item__icon"></span>
+                    <h3 class="hobbies-item__title">Cooking and eating well</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, voluptate, fugiat? Aperiam ad laborum tenetur alias quidem natus, dolore asperiores impedit est facilis nesciunt omnis exercitationem voluptate cumque ipsa consequuntur!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+        <p><span class="site-footer__text">Copyright &copy; 2017 Quirin Koch. All rights reserved. </span></p>
+    </div>
+  </footer>
+
+  <div class="modal">
+      <div class="modal__inner">
+          <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span> Contact <strong>me</strong></h2>
+          <div class="wrapper wrapper--narrow">
+              <p class="modal__description">I will have an email system in place soon. Until then, connect with me on any of the platforms below.</p>
+          </div>
+          <div class="social-icons">
+              <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
+              <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
+              <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
+              <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
+          </div>
+      </div>
+      <div class="modal__close">X</div>
+  </div>
+
+  <!-- build:js assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
